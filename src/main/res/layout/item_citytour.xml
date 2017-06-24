@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/iv_person_icon"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:src="@mipmap/icon_sight"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+            android:id="@+id/iv_favorite_mark"
+            android:layout_width="23dp"
+            android:layout_height="21dp"
+            android:src="@mipmap/favorite_mark"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/tv_person_name"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_person_icon"
+            android:layout_toLeftOf="@id/iv_favorite_mark"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:maxEms="18"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="广州长隆野222生动物园"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_person_name"
+            android:layout_alignParentRight="true"
+            android:textColor="#a9a9a9"
+            android:textSize="9sp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:text="收藏"/>
+
+        <ImageView
+            android:id="@+id/iv_viewer_head_more"
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:src="@mipmap/viewer_head_more"
+            android:layout_toRightOf="@id/iv_person_icon"
+            android:layout_below="@id/tv_person_name"
+            />
+
+        <ImageView
+            android:id="@+id/iv_viewer_head2"
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/viewer_head2"
+            android:layout_toRightOf="@id/iv_person_icon"
+            android:layout_below="@id/tv_person_name"
+            />
+
+        <ImageView
+            android:id="@+id/iv_viewer_head1"
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/viewer_head1"
+            android:layout_toRightOf="@id/iv_person_icon"
+            android:layout_below="@id/tv_person_name"
+            />
+
+
+        <ImageView
+            android:id="@+id/viewer_location"
+            android:layout_width="9dp"
+            android:layout_height="12dp"
+            android:layout_toRightOf="@id/iv_person_icon"
+            android:layout_marginTop="47dp"
+            android:layout_below="@id/tv_person_name"
+            android:src="@mipmap/viewer_location"
+
+            />
+        <TextView
+            android:id="@+id/tv_wantToCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_person_icon"
+            android:textColor="#9d9d9d"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/tv_person_name"
+            android:textSize="13sp"
+
+            android:text="2544人想去"/>
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/viewer_location"
+            android:textColor="#9d9d9d"
+            android:layout_below="@id/tv_person_name"
+            android:textSize="12sp"
+            android:layout_marginTop="47dp"
+            android:layout_marginLeft="5dp"
+            android:text="距您1.3km"/>
+        <TextView
+            android:id="@+id/tv_qi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#999999"
+            android:layout_below="@id/tv_person_name"
+            android:textSize="10sp"
+            android:layout_marginTop="53dp"
+
+            android:layout_alignParentRight="true"
+            android:text="起"/>
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff595f"
+            android:textSize="16sp"
+            android:layout_marginTop="48dp"
+            android:text="50"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/tv_person_name"
+            android:layout_toLeftOf="@id/tv_qi"
+            />
+        <TextView
+            android:id="@+id/tv_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_money"
+            android:textColor="#ff5b45"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/tv_person_name"
+
+            android:textSize="10sp"
+            android:layout_marginTop="54dp"
+            android:text="¥"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/iv_person_icon"
+            android:layout_marginTop="15dp"
+            android:background="#dededf"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

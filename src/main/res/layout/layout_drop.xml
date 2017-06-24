@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DEDFE0" />
+
+    <ListView
+        android:id="@+id/lv_more_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/downlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tm_bj"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pop_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4c000000"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tv_pop_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="男"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/pop_btn"/>
+        <TextView
+            android:id="@+id/tv_pop_two"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="女"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/pop_btn"/>
+
+        <TextView
+            android:id="@+id/tv_pop_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/pop_cancel" />
+        </LinearLayout>
+    </RelativeLayout>

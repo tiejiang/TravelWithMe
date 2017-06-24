@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_pop_want_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:text="想去的景点（7）"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#CDCDCD"
+            android:textSize="15sp"
+            android:text="长按删除景点"/>
+
+        <GridView
+            android:id="@+id/auto_pop_want_sight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:numColumns="4"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:scrollbars="none"
+            android:layout_below="@id/tv_pop_want_count"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/downlist"
+        android:layout_below="@id/auto_pop_want_sight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tm_bj"
+        android:orientation="vertical" />
+
+</LinearLayout>

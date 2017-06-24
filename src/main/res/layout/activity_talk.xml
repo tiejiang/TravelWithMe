@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.demo.travelsociety.TalkActivity">
+
+    <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="41dp"
+            android:layout_above="@+id/login"
+            android:layout_alignRight="@+id/login"
+            android:layout_alignEnd="@+id/login">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/user_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID: "
+                    android:layout_marginLeft="41dp"
+                    />
+
+                <EditText
+                    android:id="@+id/input_user_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/send_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="send to: "
+                    android:layout_marginLeft="7dp"
+                    />
+
+                <EditText
+                    android:id="@+id/send_to_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    -->
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:background="@drawable/title"/>
+
+</RelativeLayout>

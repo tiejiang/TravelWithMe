@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="job">
+        <item>不限</item>
+        <item>学生</item>
+        <item>上班族</item>
+        <item>企业家</item>
+        <item>自由职业</item>
+        <item>个体经营</item>
+        <item>行业高管</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>不限</item>
+        <item>18岁以下</item>
+        <item>18-22岁</item>
+        <item>23-26岁</item>
+        <item>27-35岁</item>
+        <item>35岁以上</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>不限</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="auth">
+        <item>不限</item>
+        <item>已认证</item>
+        <item>未认证</item>
+    </string-array>
+
+    <string-array name="area">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>杭州</item>
+        <item>武汉</item>
+    </string-array>
+</resources>

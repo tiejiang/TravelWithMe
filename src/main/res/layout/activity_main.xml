@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_menu"/>
+
+    <RadioGroup
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/bottom_want"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/select_bottom_want"
+            android:drawablePadding="5dp"
+            style="@style/BottomRadioBtn"
+            android:checked="true"
+            android:text="@string/main_want"/>
+        <RadioButton
+            android:id="@+id/bottom_city_tour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/select_bottom_city_tour"
+            android:drawablePadding="5dp"
+            style="@style/BottomRadioBtn"
+            android:text="@string/main_city_tour"
+            android:checked="false" />
+        <RadioButton
+            android:id="@+id/bottom_find"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/select_bottom_find"
+            android:drawablePadding="5dp"
+            style="@style/BottomRadioBtn"
+            android:text="@string/main_find"/>
+        <RadioButton
+            android:id="@+id/bottom_im"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/select_bottom_im"
+            android:drawablePadding="5dp"
+            style="@style/BottomRadioBtn"
+            android:text="@string/main_im"/>
+        <RadioButton
+            android:id="@+id/bottom_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/select_bottom_mine"
+            android:drawablePadding="5dp"
+            style="@style/BottomRadioBtn"
+            android:text="@string/main_mine"/>
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.travelsociety.fragment.WantFragment">
+
+    <include
+        android:id="@+id/want_head"
+        layout="@layout/layout_want_head"/>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_view"
+        android:layout_below="@id/want_head"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:id="@+id/linear_want"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="21dp"
+        android:layout_below="@+id/want_group"
+        android:layout_toRightOf="@+id/want_group"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="123dp">
+
+        <Button
+            android:id="@+id/want_confirm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="美食" />
+
+        <EditText
+            android:id="@+id/want"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="/景点"
+            />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/want_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/want_head"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/tv_want_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_want_city"
+            android:checked="true"
+            android:button="@null"
+            />
+        <RadioButton
+            android:id="@+id/tv_want_sight_spot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/select_want_spot"
+            android:button="@null"
+            />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/hzl_want_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+</RelativeLayout>

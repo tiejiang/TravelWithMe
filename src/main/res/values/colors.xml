@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#30b2fe</color>
+    <color name="colorPrimaryDark">#30b2fe</color>
+    <color name="colorAccent">#30b2fe</color>
+    <color name="radioTextCheck">#30b2fe</color>
+    <color name="radioText">#666666</color>
+    <color name="arrow_color">#888888</color>
+    <color name="gray_bg">#f1f1f1</color>
+    <color name="white">#ffffff</color>
+    <color name="bg">#f7f7f7</color>
+    <color name="driver">#eeeeee</color>
+    <color name="text_black">#333333</color>
+    <color name="item_drop_list_bg">#EDEDED</color>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/bg_menu"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/ly_want"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bj_main_listtopdown"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.demo.travelsociety.custom_view.DrawableCenterTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/radioText"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@mipmap/pop_want"
+                android:text="标为想去"
+                android:id="@+id/pop_want" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_tuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal">
+            <com.demo.travelsociety.custom_view.DrawableCenterTextView
+                android:id="@+id/pop_tuan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/radioText"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/pop_team"
+                android:text="发起团游"
+                />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/ly_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/bj_main_listdown"
+            android:orientation="horizontal">
+            <com.demo.travelsociety.custom_view.DrawableCenterTextView
+                android:id="@+id/pop_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/radioText"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@mipmap/pop_info"
+                android:text="景点介绍" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

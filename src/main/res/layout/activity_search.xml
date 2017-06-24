@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back"/>
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/back">
+            <EditText
+                android:id="@+id/et_search_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:focusable="true"
+                android:ellipsize="end"
+                android:focusableInTouchMode="true"
+                android:text=""
+                android:layout_centerVertical="true"
+                android:hint="请输入景点或城市"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="5dp"
+                android:drawableLeft="@mipmap/search"
+                android:background="@drawable/search_bg"
+                android:drawablePadding="5dp" />
+            <ImageView
+                android:id="@+id/iv_search_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/select_search_delete" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:background="@color/bg"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+</LinearLayout>

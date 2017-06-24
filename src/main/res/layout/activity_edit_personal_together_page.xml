@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="12dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:text="发起结伴"/>
+
+        <TextView
+            android:id="@+id/tv_title_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="17dp"
+            android:textColor="#3AB3FC"
+            android:textSize="16sp"
+            android:text="发布"/>
+
+    </RelativeLayout>
+    <!--标题end-->
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">-->
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/rl_edit_nick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/ly_mine_myalbum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:layout_alignLeft="@+id/iv_address"
+            android:layout_marginLeft="12dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="1dp"
+
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_splace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:text="出发地"/>
+            <EditText
+                android:id="@+id/et_search_text"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+
+                android:textColorHint="#cccccc"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:focusable="true"
+                android:ellipsize="end"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/tv_splace"
+                android:layout_marginLeft="12dp"
+                android:focusableInTouchMode="true"
+                android:text=""
+                android:background="@null"
+                android:hint="添加出发地"
+                android:imeOptions="actionSearch"
+                android:drawablePadding="5dp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_edit_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_arrow"/>
+        <ImageView
+            android:id="@+id/iv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_address"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_place_goal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/ly_place_myalbum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:layout_alignLeft="@+id/iv_place_address"
+            android:layout_marginLeft="12dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="1dp"
+
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:text="目的地"/>
+            <EditText
+                android:id="@+id/et_place_text"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+
+                android:textColorHint="#cccccc"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:focusable="true"
+                android:ellipsize="end"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/tv_splace"
+                android:layout_marginLeft="12dp"
+                android:focusableInTouchMode="true"
+                android:text=""
+                android:background="@null"
+                android:hint="添加目的地"
+                android:imeOptions="actionSearch"
+                android:drawablePadding="5dp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_place_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_arrow"/>
+        <ImageView
+            android:id="@+id/iv_place_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_address"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_startTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/ly_startTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:layout_alignLeft="@+id/iv_startTime"
+            android:layout_marginLeft="12dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="1dp"
+
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:text="出发时间"/>
+            <EditText
+                android:id="@+id/et_startTime"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+
+                android:textColorHint="#cccccc"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:focusable="true"
+                android:ellipsize="end"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/tv_splace"
+                android:layout_marginLeft="12dp"
+                android:focusableInTouchMode="true"
+                android:text=""
+                android:background="@null"
+                android:hint="选择出发日期"
+                android:imeOptions="actionSearch"
+                android:drawablePadding="5dp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_time_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_arrow"/>
+        <ImageView
+            android:id="@+id/iv_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_address"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_remark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+
+
+        <EditText
+            android:id="@+id/et_remark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textColorHint="#cccccc"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:focusable="true"
+            android:ellipsize="end"
+
+
+            android:layout_marginLeft="12dp"
+            android:focusableInTouchMode="true"
+            android:text=""
+            android:background="@null"
+            android:hint="介绍结伴那点事"
+            android:imeOptions="actionSearch"
+            android:drawablePadding="5dp" />
+
+
+
+    </RelativeLayout>
+    <!--</ScrollView>-->
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="13dp"
+        android:paddingRight="12dp"
+        android:background="#fff"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/iv_person_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/viewer_head2"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tv_person_name"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_person_icon"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:maxEms="18"
+            android:textColor="#666666"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="精灵的指环"/>
+
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="16dp"
+            android:layout_height="9dp"
+            android:src="@mipmap/icon_dynamics_hide"
+            android:layout_above="@+id/tv_qi"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="20dp"
+           />
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_person_icon"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_person_name"
+            android:textColor="#a3a3a3"
+
+            android:textSize="11sp"
+
+            android:text="2016-11-18 15:30:20"/>
+
+        <TextView
+            android:id="@+id/tv_wantToCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_time"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/tv_person_name"
+            android:textColor="#9d9d9d"
+            android:layout_marginLeft="5dp"
+            android:textSize="11sp"
+
+            android:text="1.6km"/>
+
+        <TextView
+            android:id="@+id/tv_da1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999999"
+            android:layout_below="@id/iv_person_icon"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentLeft="true"
+            android:text="时间："/>
+        <TextView
+            android:id="@+id/tv_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#999999"
+            android:layout_below="@id/tv_da1"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+
+            android:layout_alignParentLeft="true"
+            android:text="线路："/>
+        <TextView
+            android:id="@+id/tv_da1_cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:text="天河-----清远"
+            android:layout_marginLeft="13dp"
+            android:layout_below="@id/tv_da1"
+            android:layout_toRightOf="@id/tv_da1"
+            />
+        <TextView
+            android:id="@+id/tv_line1_cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:text="2016-11-29 出发"
+            android:layout_marginLeft="13dp"
+            android:layout_below="@id/iv_person_icon"
+            android:layout_toRightOf="@id/tv_line1"
+           />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginTop="86dp"
+            android:text="周末想去清远的，有没有一块的？周末想去清远的，有没有一块的？周末想去清远的，有没有一块的？周末想去清远的，有没有一块的？周末想去清远的，有没有一块的？周末想去清远的，有没有一块的？周末想去清远的，有没有一块的？周末想去清远的，有没有一块的？"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/iv_person_icon"
+
+            />
+
+
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_msg"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="12dp"
+                android:background="#fff"
+                android:paddingTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_bottom_want"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="5dp"
+                android:drawableLeft="@mipmap/icon_address"
+                android:gravity="left"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                android:text="广州市海珠区" />
+
+
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_bottom_conductor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="13dp"
+                    android:drawablePadding="5dp"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    android:layout_marginRight="15dp"
+                    android:drawableLeft="@mipmap/icon_zan"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:text="36" />
+
+                <TextView
+                    android:id="@+id/tv_bottom_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    android:drawableLeft="@mipmap/icon_say"
+                    android:gravity="center"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="37dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@id/tv_bottom_conductor"
+
+                    android:text="12" />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_toRightOf="@id/iv_person_icon"
+        android:layout_below="@id/tv_person_desc"
+        android:layout_marginTop="0dp"
+        android:background="#DEDFE0"/>
+</LinearLayout>
